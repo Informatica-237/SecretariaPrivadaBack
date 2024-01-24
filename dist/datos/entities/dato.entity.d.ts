@@ -1,0 +1,38 @@
+export declare class Dato {
+    id: number;
+    nombre?: string;
+    apellido?: string;
+    dni?: string;
+    direccion?: string;
+    cargo?: string;
+    telefonos?: string;
+    acciones?: string;
+    auditar?: boolean;
+    nSolicitud?: string;
+    fecha?: Date;
+    temaAudiencia?: string;
+    terreno?: boolean;
+    anotado?: boolean;
+    año?: string;
+    tieneCasa?: boolean;
+    dondeAlquila?: string;
+    tienetrabajo?: boolean;
+    dondeTrabaja?: string;
+    motivoConsulta?: string;
+    recibioASocial?: boolean;
+    barrioASocial?: string;
+    cuandoASocial?: Date;
+    recibeASocial?: boolean;
+    contraprestacion?: string;
+    createdAt: Date;
+    constructor(nombre: string, apellido: string, dni: string, direccion: string, cargo: string, telefonos: string, acciones: string, auditar: boolean, nSolicitud: string, fecha: Date, temaAudiencia: string, terreno: boolean, anotado: boolean, año: string, tieneCasa: boolean, dondeAlquila: string, tieneTrabajo: boolean, dondeTrabaja: string, motivoConsulta: string, recibioASocial: boolean, barrioASocial: string, cuandoASocial: Date, recibeASocial: boolean, contraprestacion: string);
+    getIdDato(): number;
+    setNombre(nombre: string): void;
+    setApellido(apellido: string): void;
+    setDni(dni: string): void;
+    setAcciones(acciones: string): void;
+    setdireccion(direccion: string): void;
+    setCargo(cargo: string): void;
+    setTelefonos(telefonos: string): void;
+    setAuditar(auditar: boolean): void;
+}
