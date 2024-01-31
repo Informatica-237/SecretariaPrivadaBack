@@ -1,0 +1,3 @@
+name: secretaria
+port: 3000
+deployment: docker
