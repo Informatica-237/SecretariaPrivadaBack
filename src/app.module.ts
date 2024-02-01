@@ -16,6 +16,7 @@ import { UsersModule } from './users/users.module';
       username: 'uxejyhsch46jhsem',
       password: '2maesP71TZv3rr2KcJrc',
       database: 'bjeea2lcgcdmneaujsib',
+      port: 3306,
 
 
       // BASE DE DATOS LOCAL 
