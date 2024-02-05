@@ -6,7 +6,7 @@ async function bootstrap() {
 
   // Configurar CORS
   app.enableCors({
-    origin: '*',
+    origin: 'https://madariagasec.firebaseapp.com',
 
 
     // origin: 'http://localhost:8080',
