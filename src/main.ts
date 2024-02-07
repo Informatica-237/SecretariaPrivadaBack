@@ -12,7 +12,6 @@ async function bootstrap() {
       // Agrega aquí cualquier otro dominio que necesites permitir
     ],
 
-
     
     // origin: 'http://localhost:8080',
      // Reemplaza con el origen de tu frontend
