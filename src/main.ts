@@ -9,7 +9,7 @@ async function bootstrap() {
     origin: [
       'https://madariagasec.web.app',
       'https://madariagasec.firebaseapp.com',
-      'http://localhost:8080'
+      // 'http://localhost:8080'
       // Agrega aquí cualquier otro dominio que necesites permitir
     ],
 
