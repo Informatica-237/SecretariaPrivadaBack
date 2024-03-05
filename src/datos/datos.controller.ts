@@ -1,7 +1,7 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, Put } from '@nestjs/common';
 import { DatosService } from './datos.service';
 import { CreateDatoDto } from './dto/create-dato.dto';
-import { UpdateDatoDto } from './dto/update-dato.dto';
+// import { UpdateDatoDto } from './dto/update-dato.dto';  
 import { Dato } from './entities/dato.entity';
 
 @Controller('datos')
@@ -23,6 +23,7 @@ export class DatosController {
     return this.datosService.getId(id)
   }
 
+
   @Patch('actualizar/:id')
   updateDatoId(@Param('id')id:number, @Body() dato: CreateDatoDto) : Promise<Dato>{
     return this.datosService.updateDatoId(id,dato);
@@ -32,4 +33,6 @@ export class DatosController {
   deleteDato(@Param('id') id : number) : Promise<boolean> {
     return this.datosService.deleteDato(id);
   }
+
+
 }

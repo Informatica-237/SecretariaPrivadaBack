@@ -1,5 +1,6 @@
 export declare class Dato {
     id: number;
+    fechaCreacion?: string;
     nombre?: string;
     apellido?: string;
     dni?: string;
@@ -8,6 +9,7 @@ export declare class Dato {
     telefonos?: string;
     acciones?: string;
     auditar?: boolean;
+    coor?: boolean;
     nSolicitud?: string;
     fecha?: Date;
     temaAudiencia?: string;
@@ -24,8 +26,10 @@ export declare class Dato {
     cuandoASocial?: Date;
     recibeASocial?: boolean;
     contraprestacion?: string;
+    estadoa?: boolean;
+    estadoc?: boolean;
     createdAt: Date;
-    constructor(nombre: string, apellido: string, dni: string, direccion: string, cargo: string, telefonos: string, acciones: string, auditar: boolean, nSolicitud: string, fecha: Date, temaAudiencia: string, terreno: boolean, anotado: boolean, año: string, tieneCasa: boolean, dondeAlquila: string, tieneTrabajo: boolean, dondeTrabaja: string, motivoConsulta: string, recibioASocial: boolean, barrioASocial: string, cuandoASocial: Date, recibeASocial: boolean, contraprestacion: string);
+    constructor(fechaCreacion: string, nombre: string, apellido: string, dni: string, direccion: string, cargo: string, telefonos: string, acciones: string, auditar: boolean, coor: boolean, nSolicitud: string, fecha: Date, temaAudiencia: string, terreno: boolean, anotado: boolean, año: string, tieneCasa: boolean, dondeAlquila: string, tieneTrabajo: boolean, dondeTrabaja: string, motivoConsulta: string, recibioASocial: boolean, barrioASocial: string, cuandoASocial: Date, recibeASocial: boolean, contraprestacion: string, estadoa: boolean, estadoc: boolean);
     getIdDato(): number;
     setNombre(nombre: string): void;
     setApellido(apellido: string): void;
@@ -35,4 +39,7 @@ export declare class Dato {
     setCargo(cargo: string): void;
     setTelefonos(telefonos: string): void;
     setAuditar(auditar: boolean): void;
+    setCoor(coor: boolean): void;
+    setEstadoa(estadoa: boolean): void;
+    setEstadoc(estadoc: boolean): void;
 }

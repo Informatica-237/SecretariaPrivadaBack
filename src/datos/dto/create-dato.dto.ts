@@ -1,4 +1,5 @@
 export class CreateDatoDto {
+    fechaCreacion?:string;
     nombre?:string;
     apellido?:string;
     dni?:string;
@@ -7,6 +8,7 @@ export class CreateDatoDto {
     telefonos?:string;
     acciones?:string;
     auditar?:boolean;
+    coor?:boolean;
     //Ficha audiencia
     nSolicitud?:string;
     fecha?:Date;
@@ -24,4 +26,6 @@ export class CreateDatoDto {
     cuandoASocial?:Date;
     recibeASocial?:boolean;
     contraprestacion?:string;
+    estadoa?:boolean;
+    estadoc?:boolean;
 }
