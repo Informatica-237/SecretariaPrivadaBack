@@ -1,4 +1,5 @@
 export declare class CreateDatoDto {
+    fechaCreacion?: string;
     nombre?: string;
     apellido?: string;
     dni?: string;
@@ -7,6 +8,7 @@ export declare class CreateDatoDto {
     telefonos?: string;
     acciones?: string;
     auditar?: boolean;
+    coor?: boolean;
     nSolicitud?: string;
     fecha?: Date;
     temaAudiencia?: string;
@@ -23,4 +25,6 @@ export declare class CreateDatoDto {
     cuandoASocial?: Date;
     recibeASocial?: boolean;
     contraprestacion?: string;
+    estadoa?: boolean;
+    estadoc?: boolean;
 }

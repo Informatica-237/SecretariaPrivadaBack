@@ -8,8 +8,8 @@ import { InjectRepository } from '@nestjs/typeorm';
 @Injectable()
 export class DatosService {
   constructor(@InjectRepository(Dato) private datoRepository: Repository<Dato>){}
-  
 
+  
   public async getAll():Promise<Dato[]>{
     return await this.datoRepository.find();
   }
@@ -35,7 +35,7 @@ export class DatosService {
     
     try{
 
-      let dato: Dato = await this.datoRepository.save(new Dato(datoDto.nombre,datoDto.apellido,datoDto.dni,datoDto.direccion,datoDto.cargo,datoDto.telefonos,datoDto.acciones, datoDto.auditar, datoDto.nSolicitud, datoDto.fecha,datoDto.temaAudiencia,datoDto.terreno,datoDto.anotado,datoDto.año,datoDto.tieneCasa,datoDto.dondeAlquila,datoDto.tieneTrabajo,datoDto.dondeTrabaja,datoDto.motivoConsulta,datoDto.recibioASocial,datoDto.barrioASocial,datoDto.cuandoASocial,datoDto.recibeASocial,datoDto.contraprestacion))
+      let dato: Dato = await this.datoRepository.save(new Dato(datoDto.fechaCreacion,datoDto.nombre, datoDto.apellido,datoDto.dni,datoDto.direccion,datoDto.cargo,datoDto.telefonos,datoDto.acciones, datoDto.auditar, datoDto.coor, datoDto.nSolicitud, datoDto.fecha,datoDto.temaAudiencia,datoDto.terreno,datoDto.anotado,datoDto.año,datoDto.tieneCasa,datoDto.dondeAlquila,datoDto.tieneTrabajo,datoDto.dondeTrabaja,datoDto.motivoConsulta,datoDto.recibioASocial,datoDto.barrioASocial,datoDto.cuandoASocial,datoDto.recibeASocial,datoDto.contraprestacion, datoDto.estadoa, datoDto.estadoc))
 
       if(dato)
       return dato;

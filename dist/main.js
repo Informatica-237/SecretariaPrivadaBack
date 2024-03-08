@@ -7,7 +7,8 @@ async function bootstrap() {
     app.enableCors({
         origin: [
             'https://madariagasec.web.app',
-            'https://madariagasec.firebaseapp.com'
+            'https://madariagasec.firebaseapp.com',
+            'http://localhost:8080'
         ],
         methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
         credentials: true,

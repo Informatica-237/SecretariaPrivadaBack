@@ -6,6 +6,9 @@ export class Dato {
     id: number
 
     @Column({ default: "Sin completar" })
+    fechaCreacion?: string
+
+    @Column({ default: "Sin completar" })
     nombre?: string
 
     @Column({ default: "Sin completar" })
@@ -28,6 +31,9 @@ export class Dato {
 
     @Column({ default: false })
     auditar?: boolean
+
+    @Column({ default: false })
+    coor?: boolean
 
     @Column()
     nSolicitud?: string
@@ -77,12 +83,18 @@ export class Dato {
     @Column({ type: "longtext", nullable: true })
     contraprestacion?: string
 
+    @Column({ default: false })
+    estadoa?: boolean
+
+    @Column({ default: false })
+    estadoc?: boolean
+
 
 
     @CreateDateColumn({ type: "timestamp", default: () => "CURRENT_TIMESTAMP(6)" })
     createdAt: Date;
 
-    constructor(nombre: string, apellido: string, dni: string, direccion: string, cargo: string, telefonos: string, acciones: string, auditar: boolean, nSolicitud: string,
+    constructor(fechaCreacion: string,nombre: string, apellido: string, dni: string, direccion: string, cargo: string, telefonos: string, acciones: string, auditar: boolean, coor: boolean, nSolicitud: string,
         fecha: Date,
         temaAudiencia: string,
         terreno: boolean,
@@ -98,7 +110,10 @@ export class Dato {
         cuandoASocial: Date,
         recibeASocial: boolean,
         contraprestacion: string,
+        estadoa: boolean,
+        estadoc: boolean,
     ) {
+        this.fechaCreacion = fechaCreacion;
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
@@ -107,6 +122,7 @@ export class Dato {
         this.telefonos = telefonos;
         this.acciones = acciones;
         this.auditar = auditar;
+        this.coor = coor;
         this.nSolicitud = nSolicitud;
         this.fecha = fecha;
         this.temaAudiencia = temaAudiencia;
@@ -123,6 +139,8 @@ export class Dato {
         this.cuandoASocial = cuandoASocial;
         this.recibeASocial = recibeASocial;
         this.contraprestacion = contraprestacion;
+        this.estadoa = estadoa;
+        this.estadoc = estadoc;
 
     }
     public getIdDato(): number {
@@ -151,5 +169,14 @@ export class Dato {
     }
     public setAuditar(auditar: boolean) {
         this.auditar = auditar;
+    }
+    public setCoor(coor: boolean) {
+        this.coor = coor;
+    }
+    public setEstadoa(estadoa: boolean) {
+        this.estadoa = estadoa;
+    }
+    public setEstadoc(estadoc: boolean) {
+        this.estadoc = estadoc;
     }
 }
