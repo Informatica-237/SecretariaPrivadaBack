@@ -15,6 +15,7 @@ async function bootstrap() {
 
 
     
+    
     // origin: 'http://localhost:8080',
      // Reemplaza con el origen de tu frontend
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',

@@ -8,7 +8,10 @@ async function bootstrap() {
         origin: [
             'https://madariagasec.web.app',
             'https://madariagasec.firebaseapp.com',
+<<<<<<< HEAD
             'http://localhost:8080'
+=======
+>>>>>>> 2e23c7670f09228b0c51f402c9a5499fe570c682
         ],
         methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
         credentials: true,
